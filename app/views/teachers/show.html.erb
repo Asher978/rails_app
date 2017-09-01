@@ -1,2 +1,6 @@
-<h1><%= @teacher.name %></h1>
+
 <%= image_tag @teacher.photo %>
+
+<br><br>
+
+<%= link_to "#{@teacher.name}'s Courses", teacher_courss_path(@teacher)  %>
